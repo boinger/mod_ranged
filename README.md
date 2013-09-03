@@ -19,3 +19,12 @@ Apache module for [libcrange](https://github.com/boinger/libcrange)
     perl-libwww-perl
     pcre
     zlib
+
+## RPM build
+
+From the libcrange directory, assuming a standard homedir-based `rpmdev-setuptree` setup
+```bash
+ln -s `pwd`/mod_ranged.spec ~/rpmbuild/SPECS
+tar cvfz ~/rpmbuild/SOURCES/mod_ranged-latest.tar.gz source
+rpmbuild -ba mod_ranged.spec
+```
