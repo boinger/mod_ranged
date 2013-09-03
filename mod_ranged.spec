@@ -5,7 +5,7 @@ Group:          System Environment/Daemons
 License:        BSD
 BuildRoot:      %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 Url:            https://github.com/boinger/mod_ranged
-Source:         %{name}-%{version}.tar.gz
+Source:         %{name}-latest.tar.gz
 
 Obsoletes: mod_ranged <= %{version}-%{release}
 Provides: mod_ranged = %{version}-%{release}
