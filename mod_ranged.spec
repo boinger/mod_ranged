@@ -4,7 +4,7 @@ Release:        1%{?dist}
 Group:          System Environment/Daemons
 License:        BSD
 BuildRoot:      %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
-Url:            https://github.com/boinger/mod_ranged
+URL:            https://github.com/boinger/mod_ranged
 Source:         %{name}-latest.tar.gz
 
 Obsoletes: mod_ranged <= %{version}-%{release}
@@ -19,7 +19,7 @@ Summary: Apache module interface to libcrange
 Apache module interface to libcrange
 
 %prep
-%setup -q
+%setup -q -n source
 
 %build
 apxs -c mod_ranged.c -lcrange $(perl -MExtUtils::Embed -e ldopts)
