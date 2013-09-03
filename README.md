@@ -25,6 +25,7 @@ Apache module for [libcrange](https://github.com/boinger/libcrange)
 From the libcrange directory, assuming a standard homedir-based `rpmdev-setuptree` setup
 ```bash
 ln -s `pwd`/mod_ranged.spec ~/rpmbuild/SPECS
-tar cvfz ~/rpmbuild/SOURCES/mod_ranged-latest.tar.gz source
+tar cvfz ~/rpmbuild/SOURCES/mod_ranged-latest.tar.gz source root
+cd ~/rpmbuild/SPECS
 rpmbuild -ba mod_ranged.spec
 ```
